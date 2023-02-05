@@ -75,7 +75,7 @@ class VM::Frame {
 
 // The maximum amount of stack to use. If the function requires more than 16K
 // bytes, acquire space from the heap.
-static constexpr const uint32_t MAX_STACK_ALLOC_SIZE = 1ull << 14ull;
+static constexpr const uint32_t MAX_STACK_ALLOC_SIZE = 1ull << 10ull;
 // A soft-maximum amount of stack to use. If a function's frame requires more
 // than 4K (the soft max), try the stack and fallback to heap. If the function
 // requires less, use the stack.
